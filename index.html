@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Importando font madimi-One do google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+    <!--Importando o css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/index.css"
+      media="screen"
+    />
+    <!--Importando Javascript -->
+    <script type="text/javascript" src="JS/index.js"></script>
+    <title>Atividade Desenvolvimento web</title>
+  </head>
+  <body>
+    <!--Nome: Willian Ferreira Gomes Aguilar
+        RU: 4976233
+    -->
+
+    <header>
+      <!-- Fazendo a barra de navegação -->
+      <!-- nav com display flex e com space-between -->
+      <nav class="nav">
+        <!-- Elemento que ficará no começo do nav -->
+        <span> Portifólio</span>
+        <!-- Elementos que estão no centro da nav -->
+        <div>
+          <a class="teste-nav" href="index.html">Home </a>
+          <a class="teste-nav" href="sobreMim.html">Sobre Mim </a>
+          <a class="teste-nav" href="formacao.html">Formação </a>
+        </div>
+        <!-- Elementos que estarão no final da nav -->
+        <!-- classe buttons para alinhar botões e dar um gap de 5px -->
+        <div class="buttons">
+          <a
+            href="https://github.com/zReBolTz"
+            target="_blank"
+            class="button-link"
+          >
+            <!-- classe github para arrumar o tamanho do botão, cor e alinhamento com conteúdo de dentro -->
+            <button class="github">
+              <img src="Images/GitHub.svg" />
+              Github
+            </button>
+          </a>
+          <!-- classe contato para arrumar o tamanho do botão, cor -->
+          <a href="contato.html"> <button class="contato">Contato</button></a>
+        </div>
+      </nav>
+    </header>
+    <!-- classe container para criar um display grid de duas colunas na tela -->
+    <div class="container">
+      <!-- classe container-center que ficará do lado esquerdo do grid -->
+      <!-- classe container-center responsável por deixar um espaçamento do grid para o conteúdo de dentro e colocar os
+        conteúdo um embaixo do outro(flex-direction: column)-->
+      <div class="container-center">
+        <!-- classe container-left responsável por alinha somente o titulo e a imagem da mão -->
+        <div class="container-left">
+          <h1>HI, i´m Willian!</h1>
+          <img src="Images/Waving Hand Light Skin Tone.svg" />
+        </div>
+        <!-- testo depois do Título -->
+        <h3>Estudante em Análise e Desenvolvimento de Sistemas</h3>
+        <br />
+        <h4>
+          Olá, muito prazer!<br />Sou o Willian como você viu ali em cima
+          hehe.<br />Sou entusiasta e curioso por novas tecnologias desde
+          criança. Vivo em busca de aprendizagem e desenvolvimento de minhas
+          habilidades na programação. <br />Acredito que todos temos um momento
+          certo para as coisas, eu quero aproveitar o momento que estou vivendo
+          e explorar o máximo que conseguir.
+        </h4>
+      </div>
+      <!-- classe container-right que ficará do lado direito do grid -->
+      <!-- classe container-right responsável por deixar centralizado a imagem  -->
+      <div class="container-right">
+        <img src="Images/pixeltrue-web-development-1 1.svg" alt="Home" />
+      </div>
+    </div>
+  </body>
+</html>

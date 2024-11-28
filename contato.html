@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/index.css"
+      media="screen"
+    />
+    <script type="text/javascript" src="JS/index.js"></script>
+    <title>Atividade Desenvolvimento web</title>
+  </head>
+  <body>
+    <!--Nome: Willian Ferreira Gomes Aguilar
+        RU: 4976233
+    -->
+    <header>
+      <!-- Fazendo a barra de navegação -->
+      <!-- nav com display flex e com space-between -->
+      <nav class="nav">
+        <!-- Elemento que ficará no começo do nav -->
+        <span> Portifólio</span>
+        <!-- Elementos que estão no centro da nav -->
+        <div>
+          <a class="teste-nav" href="index.html">Home </a>
+          <a class="teste-nav" href="sobreMim.html">Sobre Mim </a>
+          <a class="teste-nav" href="formacao.html">Formação </a>
+        </div>
+        <!-- Elementos que estarão no final da nav -->
+        <!-- classe buttons para alinhar botões e dar um gap de 5px -->
+        <div class="buttons">
+          <a
+            href="https://github.com/zReBolTz"
+            target="_blank"
+            class="button-link"
+          >
+            <!-- classe github para arrumar o tamanho do botão, cor e alinhamento com conteúdo de dentro -->
+            <button class="github">
+              <img src="Images/GitHub.svg" />
+              Github
+            </button>
+          </a>
+          <!-- classe contato para arrumar o tamanho do botão, cor -->
+          <a href="contato.html"> <button class="contato">Contato</button></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- classe container para criar um display grid de duas colunas na tela -->
+    <div class="container">
+      <!-- classe container-center que ficará do lado esquerdo do grid -->
+      <!-- classe container-center responsável por deixar um espaçamento do grid para o conteúdo de dentro e colocar os
+        conteúdo um embaixo do outro(flex-direction: column)-->
+      <div class="container-center">
+        <h1>Contato</h1>
+        <h3>Entre em contato comigo</h3>
+        <br />
+        <div>
+          <!--Criando formuário-->
+          <!--Classe form responsável pela estilização dos inputs e do button-->
+          <form class="form">
+            <!--Classe grid-form com grid ed duas colunas para colocar a label e o input do nome e telefone um do lado do outro-->
+            <div class="grid-form">
+              <!--Agrupando a label e o input-->
+              <div>
+                <label name="Nome"><h1>Nome</h1></label>
+                <input
+                  name="Nome"
+                  type="text"
+                  id="name"
+                  placeholder="Insira o seu Nome"
+                  required
+                />
+              </div>
+              <!--Agrupando a label e o input-->
+              <div>
+                <label name="Phone"><h1>Telefone</h1></label>
+                <input
+                  name="telefone"
+                  type="number"
+                  id="phone"
+                  placeholder="Insira o seu Telefone"
+                  required
+                />
+              </div>
+              <!--Agrupando a label e o input-->
+            </div>
+            <div>
+              <label name="email"><h1>Email</h1></label>
+              <input
+                name="email"
+                type="email"
+                id="email"
+                placeholder="Insira o seu Email"
+                required
+              />
+            </div>
+            <!--Agrupando a label e o input-->
+            <!--form-msg para mudar o tamanho do textarea-->
+            <div class="form-msg">
+              <label name="Mensagem"><h1>Mensagem</h1></label>
+              <textarea class="form-msg" id="message" required> </textarea>
+            </div>
+            <!--Colocando o botão no centro do formulário-->
+            <div style="display: flex; justify-content: center">
+              <button type="submit" onclick="function_alert()">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- classe container-right que ficará do lado direito do grid -->
+      <!-- classe container-right responsável por deixar centralizado a imagem  -->
+      <div class="container-right">
+        <img
+          src="Images/Online support service, laptop and headset.svg"
+          alt="Contato"
+          style="padding-bottom: 400px"
+        />
+      </div>
+    </div>
+    <script>
+      /*funçao validando formulário*/
+      /*Se caso o formuário possuir todos os valores dos inputs, irá disparar um alerta agradecendo o contato*/
+      function function_alert() {
+        if (
+          document.getElementById("name").value &&
+          document.getElementById("phone").value &&
+          document.getElementById("email").value &&
+          document.getElementById("message").value
+        ) {
+          alert("Obrigado pelo contato!");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/index.css"
+      media="screen"
+    />
+    <script type="text/javascript" src="JS/index.js"></script>
+    <title>Atividade Desenvolvimento web</title>
+  </head>
+  <body>
+    <!--Nome: Willian Ferreira Gomes Aguilar
+        RU: 4976233
+    -->
+    <header>
+      <!-- Fazendo a barra de navegação -->
+      <!-- nav com display flex e com space-between -->
+      <nav class="nav">
+        <!-- Elemento que ficará no começo do nav -->
+        <span> Portifólio</span>
+        <!-- Elementos que estão no centro da nav -->
+        <div>
+          <a class="teste-nav" href="index.html">Home </a>
+          <a class="teste-nav" href="sobreMim.html">Sobre Mim </a>
+          <a class="teste-nav" href="formacao.html">Formação </a>
+        </div>
+        <!-- Elementos que estarão no final da nav -->
+        <!-- classe buttons para alinhar botões e dar um gap de 5px -->
+        <div class="buttons">
+          <a
+            href="https://github.com/zReBolTz"
+            target="_blank"
+            class="button-link"
+          >
+            <!-- classe github para arrumar o tamanho do botão, cor e alinhamento com conteúdo de dentro -->
+            <button class="github">
+              <img src="Images/GitHub.svg" />
+              Github
+            </button>
+          </a>
+          <!-- classe contato para arrumar o tamanho do botão, cor -->
+          <a href="contato.html"> <button class="contato">Contato</button></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- classe container para criar um display grid de duas colunas na tela -->
+    <div class="container">
+      <!-- classe container-center que ficará do lado esquerdo do grid -->
+      <!-- classe container-center responsável por deixar um espaçamento do grid com o conteúdo de dentro e colocar os
+        conteúdo um embaixo do outro(flex-direction: column)-->
+      <div class="container-center">
+        <h1>Sobre Mim</h1>
+        <h4></h4>
+        Olá, sou Willian<br />
+        Moro em São Paulo e tenho 20 Anos.<br />
+        <br />
+
+        Sou uma pessoa que ama esportes e sempre tenta ficar por dentro das
+        novidades, mas o que mais acompanho é futebol. Gosto de tecnologia desde
+        pequeno, atualmente estou estudando bastante programação e tentando
+        entrar na área. Um dos meus hobbys preferidos é ir na academia, algo que
+        se tornou essencial para minha vida. Gosto de ver filmes e séries e
+        passo a maioria do tempo no dia a dia ouvindo musica
+        <!--Div hobbys com display flex, responsável por centralizar o contúdo de dentro e 
+        com flex-direction: column-->
+        <div class="hobbys">
+          <h1>HOBBYS</h1>
+          <!--classe hobbys-items com display flex e flex-direction: row 
+          responsável por deixar cada elemento um do lado do outro -->
+          <div class="hobbys-items">
+            <!--classe items-cols para agrupar dois elemento e deixar um embaixo do outro usando 
+            flex-direction: column -->
+            <div class="items-cols">
+              <img src="Images/soccer player running.svg" />
+              <h1>Futebol</h1>
+            </div>
+            <div class="items-cols">
+              <img src="Images/film clapper, popcorn, and movie tickets.svg" />
+              <h1>Filmes</h1>
+            </div>
+            <div class="items-cols">
+              <img src="Images/Retro cassette music player from the 90s.svg" />
+              <h1>Músicas</h1>
+            </div>
+            <div class="items-cols">
+              <img src="Images/powerlifting.svg" />
+              <h1>Musculação</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- classe container-right que ficará do lado direito do grid -->
+      <!-- classe container-right responsável por deixar centralizado a imagem  -->
+      <div class="container-right">
+        <img
+          src="Images/Man thinking about the question (1).svg"
+          alt="Sobre Mim"
+          style="width: 60%; padding-bottom: 265px"
+        />
+      </div>
+    </div>
+  </body>
+</html>

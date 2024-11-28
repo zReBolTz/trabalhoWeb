@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/index.css"
+      media="screen"
+    />
+    <script type="text/javascript" src="JS/index.js"></script>
+    <title>Atividade Desenvolvimento web</title>
+  </head>
+  <body>
+    <!--Nome: Willian Ferreira Gomes Aguilar
+        RU: 4976233
+    -->
+    <header>
+      <!-- Fazendo a barra de navegação -->
+      <!-- nav com display flex e com space-between -->
+      <nav class="nav">
+        <!-- Elemento que ficará no começo do nav -->
+        <span> Portifólio</span>
+        <!-- Elementos que estão no centro da nav -->
+        <div>
+          <a class="teste-nav" href="index.html">Home </a>
+          <a class="teste-nav" href="sobreMim.html">Sobre Mim </a>
+          <a class="teste-nav" href="formacao.html">Formação </a>
+        </div>
+        <!-- Elementos que estarão no final da nav -->
+        <!-- classe buttons para alinhar botões e dar um gap de 5px -->
+        <div class="buttons">
+          <a
+            href="https://github.com/zReBolTz"
+            target="_blank"
+            class="button-link"
+          >
+            <!-- classe github para arrumar o tamanho do botão, cor e alinhamento com conteúdo de dentro -->
+            <button class="github">
+              <img src="Images/GitHub.svg" />
+              Github
+            </button>
+          </a>
+          <!-- classe contato para arrumar o tamanho do botão, cor -->
+          <a href="contato.html"> <button class="contato">Contato</button></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- classe container para criar um display grid de duas colunas na tela -->
+    <div class="container">
+      <!-- classe container-center que ficará do lado esquerdo do grid -->
+      <!-- classe container-center responsável por deixar um espaçamento do grid para o conteúdo de dentro e colocar os
+        conteúdo um embaixo do outro(flex-direction: column)-->
+      <div class="container-center">
+        <!-- classe container-left responsável por alinha somente o titulo  -->
+        <div class="container-left">
+          <h1>Formação</h1>
+        </div>
+        <!--Classe formação-items responsável por deixar os elemento um do lado do outro com flex-direction: row-->
+        <div class="formacao-items">
+          <img src="Images/diploma certificate.svg" style="width: 15%" />
+          <!--agrupando dois elemento e responsável por deixar um embaixo do outro-->
+          <div class="items-cols">
+            <h1>Técnico Análise e Desenvolvimento de Sistemas</h1>
+            <!-- Agrupando dois elemento e colocando space-between-->
+            <div class="space-between">
+              <h4>Senai Manuel Garcia Filho</h4>
+              <h4>Dez/2022</h4>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="formacao-items">
+          <img src="Images/diploma certificate.svg" style="width: 15%" />
+          <div class="items-cols">
+            <h1>Tecnólogo Análise e Desenvolvimento de Sistemas</h1>
+            <div class="space-between">
+              <h4>UNINTER Centro Universitário Internacional - Polo Maua</h4>
+              <h4>jan/2027</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- classe container-right que ficará do lado direito do grid -->
+      <!-- classe container-right responsável por deixar centralizado a imagem  -->
+      <div class="container-right">
+        <img
+          src="Images/Various training courses for children.svg"
+          alt="Formação"
+          style="width: 100%; padding-bottom: 265px"
+        />
+      </div>
+    </div>
+  </body>
+</html>
